@@ -1,3 +1,4 @@
+using GestionGimnasio.Forms.Seguridad;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,13 +18,19 @@ namespace GestionGimnasio
         public InicioSesion()
         {
             InitializeComponent();
-            SetPlaceholder (txtMailSesion, "Email");
-            SetPlaceholder (txtContraSesion, "contraseña"); 
+            SetPlaceholder(txtMailSesion, "Email");
+            SetPlaceholder(txtContraSesion, "Contraseña");
+
+            // manejadores de eventos
+            btnCrearUsuario.Click += BtnCrearUsuario_Click;
+            LlbCambContra.Click += LlbCambContra_Click;
         }
 
-        private void SetPlaceholder (TextBox textbox, string placeholder)
+        //letras en gris dentro de los textbox// 
+
+        private void SetPlaceholder(TextBox textbox, string placeholder)
         {
-            textbox.ForeColor = Color.Gray; 
+            textbox.ForeColor = Color.Gray;
             textbox.Text = placeholder;
 
             textbox.Enter += (sender, e) =>
@@ -40,11 +47,34 @@ namespace GestionGimnasio
                 if (string.IsNullOrWhiteSpace(textbox.Text))
                 {
                     textbox.Text = placeholder;
-                    textbox.ForeColor = Color.Gray; 
+                    textbox.ForeColor = Color.Gray;
                 }
             };
-            
+
         }
+
+
+        //cerrar form y abrir form para crear usuario o cambiar contraseña//
+        private void BtnCrearUsuario_Click(object sender, EventArgs e)
+        {
+            CambiarContra CambiarContra = new CambiarContra();
+            CambiarContra.Show();
+            this.Hide();
+        }
+
+        private void LlbCambContra_Click(object sender, EventArgs e)
+        {
+            CambiarContra CambiarContra = new CambiarContra();
+            CambiarContra.Show();
+            this.Hide();
+        }
+
+
+        //validaciones// 
+
+
+
+
 
         private void InicioSesion_Load(object sender, EventArgs e)
         {

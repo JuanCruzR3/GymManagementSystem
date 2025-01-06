@@ -16,3 +16,5 @@ C:\Proyecto Diploma 2\GestionGimnasio\obj\Debug\net7.0-windows\refint\GestionGim
 C:\Proyecto Diploma 2\GestionGimnasio\obj\Debug\net7.0-windows\GestionGimnasio.pdb
 C:\Proyecto Diploma 2\GestionGimnasio\obj\Debug\net7.0-windows\GestionGimnasio.genruntimeconfig.cache
 C:\Proyecto Diploma 2\GestionGimnasio\obj\Debug\net7.0-windows\ref\GestionGimnasio.dll
+C:\Proyecto Diploma 2\GestionGimnasio\obj\Debug\net7.0-windows\GestionGimnasio.Forms.Seguridad.CambiarContra.resources
+C:\Proyecto Diploma 2\GestionGimnasio\obj\Debug\net7.0-windows\GestionGimnasio.Forms.Menu.resources
