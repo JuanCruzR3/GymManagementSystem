@@ -1,6 +1,6 @@
-﻿namespace GestionGimnasio.Forms
+﻿namespace GestionGimnasio.Forms.Admin
 {
-    partial class Menu
+    partial class ModUsuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             SuspendLayout();
             // 
-            // Menu
+            // ModUsuarios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(829, 405);
-            Name = "Menu";
-            Text = "Menu";
+            ClientSize = new Size(800, 450);
+            Name = "ModUsuarios";
+            Text = "ModUsuarios";
             ResumeLayout(false);
         }
 
